@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@font-face {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    src: url('fonts/PlusJakartaSans-ExtraLight.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+.html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FFFAF4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    position: fixed; /* Hace que el menú se mantenga fijo */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+.logo img {
+    height: 80px; /* Aumenta el tamaño del logo */
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Aumenta la separación entre los enlaces */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    color: #ff6b6b;
+}
+
+.btn-pedido {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+}
+.btn-pedido:hover {
+    background-color: #ff4f4f;
+}
+.hero{
+    padding-top:100px ;
+}
+.hero-image {
+    height:  800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-left-image img {
+    padding: 1em;
+    height: 365px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-right-top-image {
+    height: 365px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left-image{
+    padding: 1em;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right-image{
+    padding: 1em;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-divider{
+    background-color: #FADDDD;
+    height: 200px;
+    clear: both; /* Evita que el div se solape con otros elementos flotantes */
+    margin-top: 20px; /* Añade margen superior para asegurar que quede debajo */
+}
+.bestsellers{
+    background-color: #FADDDD;
+    justify-content: center;
+    text-align: center;
+    height: 700px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.bestsellers h1{
+    text-align: center;
+    font-size: 3em;
+    padding-top: 1em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+}
+.bestsellers h2{
+    font-size: 1em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+}
+.bestsellers p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 200;
+    padding-left: 50px;
+    padding-left: 50px;
+}
+.bestsellers-image{
+    padding: 1em;
+    height: 200px;
+    justify-content: center;
+}
+.bestsellers-image img{
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.novedades{
+    background-color: #FFFAF4;
+    justify-content: center;
+    text-align: center;
+    height: 700px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.novedades-header{
+    padding: 2em;
+    justify-content: center;
+    margin-top: 2em;
+}
+.novedades-header h1{
+    font-size: 3em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+}
+.novedades-header h3{
+    font-size: 1.2em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    padding-top: 1em;
+}
+.novedades-header p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    padding-top: 1em;
+}
+.novedades-images{
+    padding: 1em;
+    display: flex;
+    margin-top: 2em;
+}
+.novedades-images img{
+    padding: 0.5em;
+    height: 200px;
+}
+.Novedades-btn{
+    padding: 2em;
+    text-align: left;
+}
+
+.footer {
+    background-color: #4a0e0e;
+    color: #ffffff;
+    padding: 20px;
+    flex: 1
+}
+.footer-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding: 20px 0;
+}
+.logo-section {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid rgba(255,255,255,0.3);
+}
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.tagline {
+    font-style: italic;
+    font-size: 14px;
+}
+.description {
+    font-size: 12px;
+    margin-top: 20px;
+}
+.info-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.info-column {
+    flex: 1;
+}
+.info-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.info-content {
+    font-size: 12px;
+}
+.search-bar {
+    display: flex;
+}
+.search-input {
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+}
+.search-button {
+    background-color: #ffffff;
+    color: #4a0e0e;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+

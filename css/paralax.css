@@ -1,0 +1,316 @@
+/* Importaciones de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@font-face {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    src: url('fonts/PlusJakartaSans-ExtraLight.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Reset y estilos básicos */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FFFAF4;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 70px;
+    color: black; /* Color negro para el título */
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+    margin: 0px 50px;
+    color: black; /* Color negro para el párrafo */
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+ul {
+    margin: 20px 50px;
+    padding-left: 20px;
+}
+
+li {
+    color: black;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    position: fixed; /* Mantiene el menú fijo */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+.logo img {
+    height: 80px; /* Tamaño del logo */
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Separación entre enlaces */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    color: #ff6b6b;
+}
+
+.btn-pedido {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-pedido:hover {
+    background-color: #ff4f4f;
+}
+
+/* Espacio para evitar superposición con navbar fija */
+.pt-20 {
+    padding-top: 100px; /* Ajusta según la altura de la navbar */
+}
+
+/* Secciones "Sobre Nosotros" */
+.seccion1,
+.seccion2,
+.seccion3 {
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion1 {
+    background-image: url('../img/pastelera.jpg');
+}
+
+.seccion2 {
+    background-image: url('../img/17.png');
+    background-attachment: scroll;
+    width: 100%;
+}
+
+.seccion3 {
+    background-image: url('../img/2.png');
+}
+.seccion4 {
+    height: 20vh;
+    width: 100%;
+    background-color: transparent;
+}
+
+.subseccion {
+    background-image: url('../img/Star4.png');
+    background-size: contain; /* Ajusta la imagen para que se vea completa */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    background-position: center; /* Centra la imagen */
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: black; /* Texto negro dentro del contenedor */
+    padding: 20px;
+}
+
+.centrar {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.icono {
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #4a0e0e;
+    color: #ffffff;
+    padding: 20px;
+    flex: 1;
+}
+
+.footer-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.logo-section {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    min-width: 250px;
+}
+
+.logo-section .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.description {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.info-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    min-width: 250px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.info-column {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 200px;
+}
+
+.info-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.info-content {
+    font-size: 12px;
+}
+
+.search-bar {
+    display: flex;
+    margin-top: 10px;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.search-button {
+    background-color: #ffffff;
+    color: #4a0e0e;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-section, .info-section {
+        border: none;
+        padding: 10px 0;
+    }
+
+    .info-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-column {
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+/* Contenedor con dos columnas */
+.seccion2 .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Espacio entre las columnas */
+    padding: 20px;
+    height: 100%; /* Asegura que ocupe toda la sección */
+    flex-wrap: wrap; /* Permite que las columnas se apilen en pantallas pequeñas */
+}
+
+.seccion2 .columna {
+    flex: 1; /* Ambas columnas ocupan igual espacio */
+    min-width: 300px; /* Tamaño mínimo para evitar que se compriman demasiado */
+}
+
+.seccion2 .izquierda {
+    padding: 20px;
+    padding-left: 100px;
+    text-align: left;
+}
+
+.seccion2 .derecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-cuadrada {
+    width: 100%;
+    max-width: 400px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien al espacio */
+    border-radius: 15px; /* Bordes redondeados */
+}
